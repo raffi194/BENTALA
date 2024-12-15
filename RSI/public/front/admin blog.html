@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/logo bentala putih.png">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="css/styleguide.css">
+    <link rel="stylesheet" href="css/style.css">    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>BENTALA</title>
+</head>
+<body class="flex flex-col min-h-screen">
+    <div class="flex flex-nowrap w-full h-screen">
+        <div class="w-[20%] p-4 border-r-2 border-b-2 border-[--hitam] flex flex-col h-full">
+            <div class="flex flex-col flex-grow">
+                <div class="flex flex-col space-y-2 mt-4 ada">
+                    <div class="text-[--hitam] text-md font-normal p-2 rounded">
+                        <ul class="flex items-center justify-start space-x-2">
+                            <li class="flex-nowrap">
+                                <i class="fa-solid fa-grip text-[--hitam]"></i>
+                            </li>
+                            <li class="flex-nowrap">
+                                <div>Dashboard</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group hover:bg-[--ijo] hover:text-[--putih] text-[--hitam] text-md font-normal p-2 rounded cursor-pointer" onclick="openProduk()">
+                        <ul class="flex items-center justify-start space-x-2">
+                            <li class="flex-nowrap">
+                                <i class="fa-solid fa-cube text-[--hitam] group-hover:text-[--putih]"></i>  
+                            </li>
+                            <li class="flex-nowrap">
+                                <div>Produk</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <script>
+                        function openProduk() {
+                           window.open('admin produk.html');
+                       }
+                    </script>
+
+                    <div class="bg-[--ijo] text-[--putih] text-md font-normal p-2 rounded cursor-pointer ">
+                        <ul class="flex items-center justify-start space-x-2">
+                            <li class="flex-nowrap">
+                                <i class="fa-regular fa-square-plus text-[--putih]"></i>  
+                            </li>
+                            <li class="flex-nowrap">
+                                <div>Upload Blog</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-2 w-full border-t-2 border-[--hitam] idi mt-auto">
+                    <div class="group hover:bg-[--ijo] hover:text-[--putih] text-[--hitam] text-md font-normal p-2 rounded mt-3">
+                        <ul class="flex items-center justify-start space-x-2">
+                            <li class="flex-nowrap">
+                                <i class="fa-regular fa-circle-question text-[--hitam] group-hover:text-[--putih]"></i>  
+                            </li>
+                            <li class="flex-nowrap">
+                                <div>Support</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="group hover:bg-[--ijo] hover:text-[--putih] text-[--hitam] text-md font-normal p-2 rounded">
+                        <ul class="flex items-center justify-start space-x-2">
+                            <li class="flex-nowrap">
+                                <i class="fa-solid fa-gear text-[--hitam] group-hover:text-[--putih]"></i>  
+                            </li>
+                            <li class="flex-nowrap">
+                                <div>Settings</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col border-t-2 border-[--hitam] mt-4">
+                    <div class="group hover:bg-[--ijo] hover:text-[--putih] text-[--hitam] text-md font-normal p-2 rounded mt-3">
+                        <ul class="flex items-center justify-start space-x-2">
+                            <li class="flex-nowrap">
+                                <div class="h-8 w-8 rounded-full overflow-hidden">
+                                    <img src="img/Profile 2.png" alt="Profile Picture" class="h-full w-full object-cover">
+                                </div>
+                            </li>
+                            <li class="flex-nowrap flex-grow">
+                                <div>MUTIA KHAIRUNNISA</div>
+                            </li>
+                            <li class="flex-nowrap">
+                                <i class="fa-solid fa-ellipsis text-[--hitam] group-hover:text-[--putih] items-end"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[80%] p-4 h-screen">
+            <div class="text-6xl font-bold uppercase">
+                <div>EDIT BLOG</div>
+            </div>
+            <div class="w-full h-auto p-2">
+                <div class="flex flex-nowrap justify-end space-x-5">
+                    <div class="relative">
+                        <input type="text" placeholder="Search" class="bg-transparent text-[--item] border-2 border-[--hitam] rounded-2xl py-2 pl-10 pr-3">
+                        <svg class="absolute left-3 top-3 transform  text-[--hitam] h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="flex justify-end space-x-4">
+                        <div id="pilihanContainer" class="hidden flex items-center space-x-4">
+                            <div class="text-[--hitamkurang] p-2">
+                                Pilihan: <span id="selectedCardCount">0</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i id="trashIcon" class="fa-solid fa-trash-can fa-xl cursor-pointer hover:text-[--orange]"></i>
+                            </div>
+                        </div>
+                        <div id="pilihButton" data-state="pilih" class="text-[--hitam] p-2 px-4 rounded-2xl border-2 hover:bg-[--hitam] hover:text-[--putih] cursor-pointer border-[--hitam]">Pilih</div>
+                    </div>
+                    <div class="flex justify-end">
+                        <div class="text-[--hitam] p-2 px-4 rounded-2xl border-2 hover:bg-[--hitam] hover:text-[--putih] cursor-pointer border-[--hitam]">Tambahkan Produk</div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="mt-5">
+                <div class="flex justify-around w-full"> 
+                    <div class="grid grid-cols-1 gap-4 h-[calc(100vh-200px)] overflow-y-auto scrollbar-thin scrollbar-thumb-[--hitam] scrollbar-track-[--hitam]">
+                        <!-- Card 1 -->
+                        <div class="flex-shrink-0 relative group">
+                            <div class="relative w-fit group">
+                                <div class="relative flex"> 
+                                    <div class="overflow-hidden transition-shadow duration-300 flex"> 
+                                        <div class="relative">
+                                            <div id="card1" class="absolute inset-0 bg-[--hitamkurang] opacity-0 group-[.checked]:opacity-50 pointer-events-none transition-opacity duration-300"></div>
+                                            <div class="absolute top-2 left-2 z-20 checkbox-container hidden">
+                                                <input type="checkbox" id="checkbox1" class="hidden peer" onchange="toggleChecked(this, 'card1')"/>
+                                                <label for="checkbox1" class="w-5 h-5 border-2 border-[--hitam] rounded-full block cursor-pointer peer-checked:bg-[--hitam] peer-checked:border-[--hitam]"></label>
+                                            </div>
+                                            <img src="img/Placeholder Image.png" alt="Product 1" class="w-[600px] h-80 object-cover"> <!-- Image on the left -->
+                                        </div>
+                                        
+                                        <div class="flex flex-col p-4 w-full">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-md font-bold">Category</span>
+                                                <div class="flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1 cursor-pointer">
+                                                    <i class="fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                    <span class="ml-1 text-xs font-bold text-[--hitam]">Edit</span>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex justify-between items-center w-3/4 mt-2">
+                                                <span class="text-6xl font-bold text-[--hitam]">Blog title heading will go here</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="flex-shrink-0 relative group">
+                            <div class="relative w-fit group">
+                                <div class="relative flex"> 
+                                    <div class="overflow-hidden transition-shadow duration-300 flex"> 
+                                        <div class="relative">
+                                            <div id="card2" class="absolute inset-0 bg-[--hitamkurang] opacity-0 group-[.checked]:opacity-50 pointer-events-none transition-opacity duration-300"></div>
+                                            <div class="absolute top-2 left-2 z-20 checkbox-container hidden">
+                                                <input type="checkbox" id="checkbox2" class="hidden peer" onchange="toggleChecked(this, 'card2')"/>
+                                                <label for="checkbox2" class="w-5 h-5 border-2 border-[--hitam] rounded-full block cursor-pointer peer-checked:bg-[--hitam] peer-checked:border-[--hitam]"></label>
+                                            </div>
+                                            <img src="img/Placeholder Image.png" alt="Product 1" class="w-[600px] h-80 object-cover"> <!-- Image on the left -->
+                                        </div>
+                                        
+                                        <div class="flex flex-col p-4 w-full">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-md font-bold">Category</span>
+                                                <div class="flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1 cursor-pointer">
+                                                    <i class="fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                    <span class="ml-1 text-xs font-bold text-[--hitam]">Edit</span>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex justify-between items-center w-3/4 mt-2">
+                                                <span class="text-6xl font-bold text-[--hitam]">Blog title heading will go here</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="flex-shrink-0 relative group">
+                            <div class="relative w-fit group">
+                                <div class="relative flex"> 
+                                    <div class="overflow-hidden transition-shadow duration-300 flex"> 
+                                        <div class="relative">
+                                            <div id="card3" class="absolute inset-0 bg-[--hitamkurang] opacity-0 group-[.checked]:opacity-50 pointer-events-none transition-opacity duration-300"></div>
+                                            <div class="absolute top-2 left-2 z-20 checkbox-container hidden">
+                                                <input type="checkbox" id="checkbox3" class="hidden peer" onchange="toggleChecked(this, 'card3')"/>
+                                                <label for="checkbox3" class="w-5 h-5 border-2 border-[--hitam] rounded-full block cursor-pointer peer-checked:bg-[--hitam] peer-checked:border-[--hitam]"></label>
+                                            </div>
+                                            <img src="img/Placeholder Image.png" alt="Product 1" class="w-[600px] h-80 object-cover"> <!-- Image on the left -->
+                                        </div>
+                                        
+                                        <div class="flex flex-col p-4 w-full">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-md font-bold">Category</span>
+                                                <div class="flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1 cursor-pointer">
+                                                    <i class="fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                    <span class="ml-1 text-xs font-bold text-[--hitam]">Edit</span>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex justify-between items-center w-3/4 mt-2">
+                                                <span class="text-6xl font-bold text-[--hitam]">Blog title heading will go here</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Card 4 -->
+                        <div class="flex-shrink-0 relative group">
+                            <div class="relative w-fit group">
+                                <div class="relative flex"> 
+                                    <div class="overflow-hidden transition-shadow duration-300 flex"> 
+                                        <div class="relative">
+                                            <div id="card4" class="absolute inset-0 bg-[--hitamkurang] opacity-0 group-[.checked]:opacity-50 pointer-events-none transition-opacity duration-300"></div>
+                                            <div class="absolute top-2 left-2 z-20 checkbox-container hidden">
+                                                <input type="checkbox" id="checkbox4" class="hidden peer" onchange="toggleChecked(this, 'card4')"/>
+                                                <label for="checkbox4" class="w-5 h-5 border-2 border-[--hitam] rounded-full block cursor-pointer peer-checked:bg-[--hitam] peer-checked:border-[--hitam]"></label>
+                                            </div>
+                                            <img src="img/Placeholder Image.png" alt="Product 1" class="w-[600px] h-80 object-cover"> <!-- Image on the left -->
+                                        </div>
+                                        
+                                        <div class="flex flex-col p-4 w-full">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-md font-bold">Category</span>
+                                                <div class="flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1 cursor-pointer">
+                                                    <i class="fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                    <span class="ml-1 text-xs font-bold text-[--hitam]">Edit</span>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex justify-between items-center w-3/4 mt-2">
+                                                <span class="text-6xl font-bold text-[--hitam]">Blog title heading will go here</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Card 5 -->
+                        <div class="flex-shrink-0 relative group">
+                            <div class="relative w-fit group">
+                                <div class="relative flex"> 
+                                    <div class="overflow-hidden transition-shadow duration-300 flex"> 
+                                        <div class="relative">
+                                            <div id="card5" class="absolute inset-0 bg-[--hitamkurang] opacity-0 group-[.checked]:opacity-50 pointer-events-none transition-opacity duration-300"></div>
+                                            <div class="absolute top-2 left-2 z-20 checkbox-container hidden">
+                                                <input type="checkbox" id="checkbox5" class="hidden peer" onchange="toggleChecked(this, 'card5')"/>
+                                                <label for="checkbox5" class="w-5 h-5 border-2 border-[--hitam] rounded-full block cursor-pointer peer-checked:bg-[--hitam] peer-checked:border-[--hitam]"></label>
+                                            </div>
+                                            <img src="img/Placeholder Image.png" alt="Product 1" class="w-[600px] h-80 object-cover"> <!-- Image on the left -->
+                                        </div>
+                                        
+                                        <div class="flex flex-col p-4 w-full">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-md font-bold">Category</span>
+                                                <div class="flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1 cursor-pointer">
+                                                    <i class="fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                    <span class="ml-1 text-xs font-bold text-[--hitam]">Edit</span>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex justify-between items-center w-3/4 mt-2">
+                                                <span class="text-6xl font-bold text-[--hitam]">Blog title heading will go here</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Card 6 -->
+                        <div class="flex-shrink-0 relative group">
+                            <div class="relative w-fit group">
+                                <div class="relative flex"> 
+                                    <div class="overflow-hidden transition-shadow duration-300 flex"> 
+                                        <div class="relative">
+                                            <div id="card6" class="absolute inset-0 bg-[--hitamkurang] opacity-0 group-[.checked]:opacity-50 pointer-events-none transition-opacity duration-300"></div>
+                                            <div class="absolute top-2 left-2 z-20 checkbox-container hidden">
+                                                <input type="checkbox" id="checkbox6" class="hidden peer" onchange="toggleChecked(this, 'card6')"/>
+                                                <label for="checkbox6" class="w-5 h-5 border-2 border-[--hitam] rounded-full block cursor-pointer peer-checked:bg-[--hitam] peer-checked:border-[--hitam]"></label>
+                                            </div>
+                                            <img src="img/Placeholder Image.png" alt="Product 1" class="w-[600px] h-80 object-cover"> <!-- Image on the left -->
+                                        </div>
+                                        
+                                        <div class="flex flex-col p-4 w-full">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-md font-bold">Category</span>
+                                                <div class="flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1 cursor-pointer">
+                                                    <i class="fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                    <span class="ml-1 text-xs font-bold text-[--hitam]">Edit</span>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex justify-between items-center w-3/4 mt-2">
+                                                <span class="text-6xl font-bold text-[--hitam]">Blog title heading will go here</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Card 7 -->
+                        <div class="flex-shrink-0 relative group">
+                            <div class="relative w-fit group">
+                                <div class="relative flex"> 
+                                    <div class="overflow-hidden transition-shadow duration-300 flex"> 
+                                        <div class="relative">
+                                            <div id="card7" class="absolute inset-0 bg-[--hitamkurang] opacity-0 group-[.checked]:opacity-50 pointer-events-none transition-opacity duration-300"></div>
+                                            <div class="absolute top-2 left-2 z-20 checkbox-container hidden">
+                                                <input type="checkbox" id="checkbox7" class="hidden peer" onchange="toggleChecked(this, 'card7')"/>
+                                                <label for="checkbox7" class="w-5 h-5 border-2 border-[--hitam] rounded-full block cursor-pointer peer-checked:bg-[--hitam] peer-checked:border-[--hitam]"></label>
+                                            </div>
+                                            <img src="img/Placeholder Image.png" alt="Product 1" class="w-[600px] h-80 object-cover"> <!-- Image on the left -->
+                                        </div>
+                                        
+                                        <div class="flex flex-col p-4 w-full">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-md font-bold">Category</span>
+                                                <div class="flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1 cursor-pointer">
+                                                    <i class="fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                    <span class="ml-1 text-xs font-bold text-[--hitam]">Edit</span>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex justify-between items-center w-3/4 mt-2">
+                                                <span class="text-6xl font-bold text-[--hitam]">Blog title heading will go here</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Card 8 -->
+                        <div class="flex-shrink-0 relative group">
+                            <div class="relative w-fit group">
+                                <div class="relative flex"> 
+                                    <div class="overflow-hidden transition-shadow duration-300 flex"> 
+                                        <div class="relative">
+                                            <div id="card8" class="absolute inset-0 bg-[--hitamkurang] opacity-0 group-[.checked]:opacity-50 pointer-events-none transition-opacity duration-300"></div>
+                                            <div class="absolute top-2 left-2 z-20 checkbox-container hidden">
+                                                <input type="checkbox" id="checkbox8" class="hidden peer" onchange="toggleChecked(this, 'card8')"/>
+                                                <label for="checkbox8" class="w-5 h-5 border-2 border-[--hitam] rounded-full block cursor-pointer peer-checked:bg-[--hitam] peer-checked:border-[--hitam]"></label>
+                                            </div>
+                                            <img src="img/Placeholder Image.png" alt="Product 1" class="w-[600px] h-80 object-cover"> <!-- Image on the left -->
+                                        </div>
+                                        
+                                        <div class="flex flex-col p-4 w-full">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-md font-bold">Category</span>
+                                                <div class="flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1 cursor-pointer">
+                                                    <i class="fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                    <span class="ml-1 text-xs font-bold text-[--hitam]">Edit</span>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex justify-between items-center w-3/4 mt-2">
+                                                <span class="text-6xl font-bold text-[--hitam]">Blog title heading will go here</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Card 9 -->
+                        <div class="flex-shrink-0 relative group">
+                            <div class="relative w-fit group">
+                                <div class="relative flex"> 
+                                    <div class="overflow-hidden transition-shadow duration-300 flex"> 
+                                        <div class="relative">
+                                            <div id="card9" class="absolute inset-0 bg-[--hitamkurang] opacity-0 group-[.checked]:opacity-50 pointer-events-none transition-opacity duration-300"></div>
+                                            <div class="absolute top-2 left-2 z-20 checkbox-container hidden">
+                                                <input type="checkbox" id="checkbox9" class="hidden peer" onchange="toggleChecked(this, 'card9')"/>
+                                                <label for="checkbox9" class="w-5 h-5 border-2 border-[--hitam] rounded-full block cursor-pointer peer-checked:bg-[--hitam] peer-checked:border-[--hitam]"></label>
+                                            </div>
+                                            <img src="img/Placeholder Image.png" alt="Product 1" class="w-[600px] h-80 object-cover"> <!-- Image on the left -->
+                                        </div>
+                                        
+                                        <div class="flex flex-col p-4 w-full">
+                                            <div class="flex justify-between items-center">
+                                                <span class="text-md font-bold">Category</span>
+                                                <div class="flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1 cursor-pointer">
+                                                    <i class="fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                    <span class="ml-1 text-xs font-bold text-[--hitam]">Edit</span>
+                                                </div>
+                                            </div>
+                        
+                                            <div class="flex justify-between items-center w-3/4 mt-2">
+                                                <span class="text-6xl font-bold text-[--hitam]">Blog title heading will go here</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script>
+                            // Fungsi untuk update jumlah card
+                            function updateCardCount() {
+                                const cardContainer = document.querySelector('.grid');
+                                const cardCount = cardContainer.querySelectorAll('.group').length;
+                                
+                                const countElement = document.getElementById('cardCount');
+                                if (countElement) {
+                                    countElement.textContent = cardCount;
+                                }
+                            }
+
+                            // Fungsi untuk toggle visibility checkbox
+                            function toggleCheckboxVisibility() {
+                                const checkboxContainers = document.querySelectorAll('.checkbox-container');
+                                const pilihButton = document.getElementById('pilihButton');
+                                
+                                const pilihanElement = document.querySelector('div[id="pilihanContainer"]');
+                                const trashIcon = document.getElementById('trashIcon');
+
+                                // Toggle visibility checkbox
+                                checkboxContainers.forEach(container => {
+                                    container.classList.toggle('hidden');
+                                });
+
+                                // Toggle teks dan styling tombol
+                                if (pilihButton.dataset.state === 'pilih' || !pilihButton.dataset.state) {
+                                    // Ubah ke mode Batal
+                                    pilihButton.textContent = 'Batal';
+                                    pilihButton.classList.add('bg-[--orange]', 'text-[--putih]');
+                                    pilihButton.dataset.state = 'batal';
+
+                                    // Tampilkan elemen pilihan dan trash icon
+                                if (pilihanElement) {
+                                    pilihanElement.classList.remove('hidden');
+                                    }
+                                if (trashIcon) {
+                                    trashIcon.classList.remove('hidden');
+                                    }
+                                }
+                                 
+                                else {
+                                    // Ubah ke mode Pilih
+                                    pilihButton.textContent = 'Pilih';
+                                    pilihButton.classList.remove('bg-[--orange]', 'text-[--putih]');
+                                    pilihButton.dataset.state = 'pilih';
+
+                                if (pilihanElement) {
+                                        pilihanElement.classList.add('hidden');
+                                    }
+                                if (trashIcon) {
+                                        trashIcon.classList.add('hidden');
+                                    }
+                                }
+
+                                // Reset semua checkbox saat dibuka
+                                const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                                checkboxes.forEach(checkbox => {
+                                    checkbox.checked = false;
+                                    checkbox.closest('.group').classList.remove('checked');
+                                });
+
+                                // Update jumlah card yang dipilih
+                                updateSelectedCardCount();
+                            }
+
+                            // Fungsi untuk update jumlah card yang dipilih
+                            function updateSelectedCardCount() {
+                                const checkedCards = document.querySelectorAll('.group input[type="checkbox"]:checked');
+                                const selectedCountElement = document.getElementById('selectedCardCount');
+                                
+                                if (selectedCountElement) {
+                                    selectedCountElement.textContent = checkedCards.length;
+                                    }
+                            }
+
+                            // Fungsi untuk toggle checked state
+                            function toggleChecked(checkbox, cardId) {
+                                const card = document.getElementById(cardId).closest('.group');
+                                
+                                if (checkbox.checked) {
+                                    card.classList.add('checked');
+                                } else {
+                                    card.classList.remove('checked');
+                                }
+
+                                // Update jumlah card yang dipilih
+                                updateSelectedCardCount();
+                            }
+
+                            // Fungsi untuk menghapus card yang di-check
+                            function deleteSelectedCards() {
+                                const checkedCards = document.querySelectorAll('.group input[type="checkbox"]:checked');
+                                
+                                if (checkedCards.length === 0) {
+                                    alert('Pilih card yang ingin dihapus terlebih dahulu');
+                                    return;
+                                }
+
+                                const confirmDelete = confirm(`Apakah Anda yakin ingin menghapus ${checkedCards.length} card?`);
+                                
+                                if (confirmDelete) {
+                                    // Simpan jumlah card yang akan dihapus
+                                    const cardsToRemove = checkedCards.length;
+
+                                    // Hapus card yang di-check
+                                    checkedCards.forEach(checkbox => {
+                                        const cardToRemove = checkbox.closest('.group');
+                                        cardToRemove.remove();
+                                    });
+
+                                    // Update jumlah card
+                                    updateCardCount();
+                                    
+                                    // Reset mode select
+                                    resetSelectMode();
+
+                                    // Optional: Tambahkan notifikasi
+                                    Swal2.fire({ 
+                                        icon: 'success', 
+                                        title: `Berhasil menghapus ${cardsToRemove} card`, 
+                                        showConfirmButton: false, 
+                                        timer: 1500 
+                                    });
+                                }
+                            }
+
+                            // Fungsi untuk mereset mode select
+                            function resetSelectMode() {
+                                const checkboxContainers = document.querySelectorAll('.checkbox-container');
+                                const pilihButton = document.getElementById('pilihButton');
+                                const pilihanElement = document.querySelector('div[id="pilihanContainer"]');
+                                const trashIcon = document.getElementById('trashIcon');
+                                
+                                // Sembunyikan checkbox
+                                checkboxContainers.forEach(container => {
+                                    container.classList.add('hidden');
+                                });
+
+                                // Reset tombol Pilih
+                                pilihButton.textContent = 'Pilih';
+                                pilihButton.classList.remove('bg-[--orange]', 'text-[--putih]');
+                                pilihButton.dataset.state = 'pilih'; // Reset state tombol
+
+                                // Sembunyikan elemen pilihan dan trash icon
+                                if (pilihanElement) {
+                                    pilihanElement.classList.add('hidden');
+                                }
+                                if (trashIcon) {
+                                    trashIcon.classList.add('hidden');
+                                }
+
+                                // Reset checkbox dan checked state
+                                const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                                checkboxes.forEach(checkbox => {
+                                    checkbox.checked = false;
+                                    checkbox.closest('.group').classList.remove('checked');
+                                });
+
+                                // Reset jumlah card yang dipilih
+                                const selectedCountElement = document.getElementById('selectedCardCount');
+                                if (selectedCountElement) {
+                                    selectedCountElement.textContent = '0';
+                                }
+                            }
+
+                            // Event listener saat DOM sudah dimuat
+                            document.addEventListener('DOMContentLoaded', () => {
+                                // Inisialisasi jumlah card saat halaman dimuat
+                                updateCardCount();
+
+                                // Tambahkan event listener ke tombol "Pilih"
+                                const pilihButton = document.getElementById('pilihButton');
+                                if (pilihButton) {
+                                    pilihButton.addEventListener('click', toggleCheckboxVisibility);
+                                }
+
+                                // Tambahkan event listener ke ikon trash
+                                const trashIcon = document.getElementById('trashIcon');
+                                if (trashIcon) {
+                                    trashIcon.addEventListener('click', deleteSelectedCards);
+                                    }
+                                
+                                    const pilihanElement = document.querySelector('div[id="pilihanContainer"]');
+                                // Sembunyikan elemen-elemen pada awal halaman
+                                if (pilihanElement) {
+                                    pilihanElement.classList.add('hidden');
+                                }
+                                if (trashIcon) {
+                                    trashIcon.classList.add('hidden');
+                                }
+                            });
+                        </script>
+
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+    <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+    <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+    <script src="https:// cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>

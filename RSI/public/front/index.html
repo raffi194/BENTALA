@@ -1,0 +1,2268 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="Width=device-width initial-sccale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+  <link rel="stylesheet" href="css/styleguide.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'>
+  <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+  <link rel="icon" type="png" href="img/logo bentala putih.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+  <title>BENTALA</title>
+  
+</head>
+<body>
+    <nav class="fixed top-0 w-full h-14 z-10 bg-[--putih]">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-1">
+                <div class="absolute left-10 top-4 h-16 w-16 space-x-10">
+                    <ul class="sm:flex space-x-10">
+                        <li><a href="koleksi.html" class="text-[--hitam]  hover:bg-[--hitam] hover:text-[--putih] px-3 py-2 rounded no-underline cursor-pointer">Koleksi</a></li>
+                        <li><a class="text-[--hitam]  hover:bg-[--hitam] hover:text-[--putih] px-3 py-2 rounded no-underline cursor-pointer" onclick="openKomunitas()">Komunitas</a></li>
+                        <li><a class="text-[--hitam]  hover:bg-[--hitam] hover:text-[--putih] px-3 py-2 rounded no-underline cursor-pointer">Tentang</a></li>
+                    </ul>
+                    <script>
+                        function openKomunitas() {
+                            window.open('Komunitas.html');
+                        }
+                    </script>
+                </div>
+                <div class="absolute top-2.5 left-1/2 transform -translate-x-1/2">
+                    <a href="#" id="logo">
+                        <img src="img/Logo BENTALA.png" alt="BENTALA" class="w-15 h-9">
+                    </a>
+                </div>
+                <div class="absolute top-2.5 right-5">
+                    <form class="space-x-10 flex items-center">
+                        <div class="relative">
+                            <input type="text" placeholder="Search" class="bg-transparent text-[--item] border-2 border-[--hitam] rounded-lg py-1 pl-10 pr-3">
+                            <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <button class="btn" type="button">
+                            <div onclick="openCart()">
+                                <i class="fa-solid fa-bag-shopping fa-lg" style="color: var(--hitam);"></i>
+                            </div>
+                        </button>
+
+                        <script>
+                            function openCart() {
+                                window.open('Cart.html');
+                            }
+                        </script>
+
+                        <button class="btn" type="button">
+                            <i class="fa-regular fa-user fa-lg"onclick="openProfile()" style="color: var(--hitam);"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <script>
+                    function openProfile() {
+                        window.open('Profile.html', '_blank');
+                    }
+                </script>
+
+            </div>
+        </div>
+    </nav>
+  
+<div class="imgatas">
+    <div class="relative h-screen sm:h-screen lg:h-screen xl:h-screen 2xl:h-screen sm:w-full lg:w-full xl:w-full 2xl:w-full">
+        <img src="img/img sepatu atas.png" class="h-screen w-screen object-cover object-top" alt="Gambar Sepatu">
+    </div>
+    <div class="relative">
+        <p class="text-start text-7xl text-[--putih] text-title absolute bottom-40 left-10 roboto-bold">ITS YOUR TIME TO</p>
+        <p class="text-start text-7xl text-[--putih] text-title absolute bottom-20 left-10 roboto-bold">MAKING A DIFFERENCE.</p> 
+    </div>
+    <div class="relative cursor-pointer">
+            <a href="#" class="bg-transparent text-[--putih] border-2 px-1 py-2 no-underline rounded-lg absolute bottom-32 right-10">Discover your lifestyle</a>
+    </div>
+</div>
+
+    <div class="text-center mx-20 my-10 uppercase max-w-full">
+        <div class="text-4xl roboto-bold text-[--item]">
+          <span>We creates </span>
+            <span class="text-[--ijo]">eco-friendly products</span>
+            <span> using sustainable materials like kenaf canvas, recycled plastic leather, and rubber soles. With solar-powered, water-saving production, they offer modern, casual shoes, bags, sandals, and clothing for all activities.</span>
+        </div>
+    </div>
+
+    
+        <div class="wrapper">
+            <div class="uppercase grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 max-w-screen mx-auto">
+                <div class="relative group">
+                    <img src="img/IMGSepatu.png" class="h-screen w-full object-cover shadow-lg transition-transform duration-300 transform">
+                    <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                    <div class="absolute inset-0">
+                        <span class="text-3xl font-bold text-[--putih] absolute top-0 right-3 opacity-100 transition-opacity duration-300 group-hover:opacity-0">Sepatu</span>
+                        <span class="text-3xl font-bold text-[--hitam] absolute top-0 right-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Sepatu</span>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="img/IMGJaket.png" class="h-screen w-full object-cover shadow-lg transition-transform duration-300 transform">
+                    <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                    <div class="absolute inset-0">
+                        <span class="text-3xl font-bold text-[--putih] absolute top-0 right-3 opacity-100 transition-opacity duration-300 group-hover:opacity-0">Jaket</span>
+                        <span class="text-3xl font-bold text-[--hitam] absolute top-0 right-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Jaket</span>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="img/IMGkemeja.png" class="h-screen w-full object-cover shadow-lg transition-transform duration-300 transform">
+                    <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                    <div class="absolute inset-0">
+                        <span class="text-3xl font-bold text-[--putih] absolute top-0 right-3 opacity-100 transition-opacity duration-300 group-hover:opacity-0">Kemeja</span>
+                        <span class="text-3xl font-bold text-[--hitam] absolute top-0 right-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Kemeja</span>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="img/IMGCelana.png" class="h-screen w-full object-cover shadow-lg transition-transform duration-300 transform">
+                    <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                    <div class="absolute inset-0">
+                        <span class="text-3xl font-bold text-[--putih] absolute top-0 right-3 opacity-100 transition-opacity duration-300 group-hover:opacity-0">Celana</span>
+                        <span class="text-3xl font-bold text-[--hitam] absolute top-0 right-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">Celana</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Koleksi">
+            <div class="">
+              <span class="text-3xl font-bold text-[--hitam] flex justify-center my-10">KOLEKSI TERBARU</span>
+            </div>
+            
+        </div>
+
+        <div class="content w-full mx-auto">
+            <div class="relative">
+                <div class="slider overflow-hidden"> 
+                    <div class="slide hidden" id="slide1">
+                            <div class="wrapper">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-2/3 mx-auto">
+                                    <!-- Card 1 -->
+                                    <div class="relative">
+                                        <a href="Blouson Jacket.html">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card01.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Blouson Jacket Short Utility</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp999.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                                    
+                                    <!-- Card 2 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card02.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.5/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Pijakbumi</h2>
+                                            <p class="text-[--hitam] font-semibold">Bumisocks Signature Mid-Quarter Socks</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp169.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                                    
+                                    <!-- Card 3 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card03.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.1/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Flannel Shirt Long-Sleeve</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp255.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 4 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card04.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.5/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">H&M</h2>
+                                            <p class="text-[--hitam] font-semibold">Draped lyocell-blend skirt</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp380.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 5 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card05.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Packable Bag</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp299.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 6 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card06.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.1/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Sukkha Citta</h2>
+                                            <p class="text-[--hitam] font-semibold">HARA - Accent Scarf</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp790.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 7 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card07.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Sukkha Citta</h2>
+                                            <p class="text-[--hitam] font-semibold">ANGKASA Jacquard</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp2.890.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 8 -->
+                                    <div class="relative">
+                                        <a href="Corduroy Cap.html">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card08.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Aile</h2>
+                                            <p class="text-[--hitam] font-semibold">Corduroy Cap</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp159.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 9 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                    <img src="img/card09.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                    <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.4/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Slim Fit Jeans</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp255.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide hidden" id="slide2">
+                        <div class="wrapper">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-2/3 mx-auto">
+                                    <!-- Card 1 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card11.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Blouson Jacket Short Utility</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp999.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                                    
+                                    <!-- Card 2 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card12.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.5/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Pijakbumi</h2>
+                                            <p class="text-[--hitam] font-semibold">Kotta Hybrid</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp519.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                                    
+                                    <!-- Card 3 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card13.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Pijakbumi</h2>
+                                            <p class="text-[--hitam] font-semibold">Tiga Slip-On</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp549.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 4 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card14.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Aile</h2>
+                                            <p class="text-[--hitam] font-semibold">Short-Sleeve Shirt</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp285.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 5 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card15.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.4/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Pijakbumi</h2>
+                                            <p class="text-[--hitam] font-semibold">Naya Sandal</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp460.625</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 6 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card16.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.1/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">H&M</h2>
+                                            <p class="text-[--hitam] font-semibold">Regular Fit Textured-Weave Resort Shirt</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp349.900</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 7 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card17.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Sukkha Citta</h2>
+                                            <p class="text-[--hitam] font-semibold">HARA - Everyday Pants</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp2.490.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 8 -->
+                                    <div class="relative">
+                                        <a href="Corduroy Cap.html">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card18.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.1/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Aile</h2>
+                                            <p class="text-[--hitam] font-semibold">Sweater Polo Long-Sleeve</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp255.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 9 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                    <img src="img/card09.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                    <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.5/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Sukkha Citta</h2>
+                                            <p class="text-[--hitam] font-semibold">HARA - Everyday Shorts </p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp1.999.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="slide hidden" id="slide3">
+                        <div class="wrapper">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-2/3 mx-auto">
+                                    <!-- Card 1 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card01.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Blouson Jacket Short Utility</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp999.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                                    
+                                    <!-- Card 2 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card02.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.5/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Pijakbumi</h2>
+                                            <p class="text-[--hitam] font-semibold">Bumisocks Signature Mid-Quarter Socks</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp169.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                                    
+                                    <!-- Card 3 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card03.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.1/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Flannel Shirt Long-Sleeve</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp255.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 4 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card04.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.5/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">H&M</h2>
+                                            <p class="text-[--hitam] font-semibold">Draped lyocell-blend skirt</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp380.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 5 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card05.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Packable Bag</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp299.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 6 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card06.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.1/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Sukkha Citta</h2>
+                                            <p class="text-[--hitam] font-semibold">HARA - Accent Scarf</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp790.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 7 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card07.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Sukkha Citta</h2>
+                                            <p class="text-[--hitam] font-semibold">ANGKASA Jacquard</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp2.890.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 8 -->
+                                    <div class="relative">
+                                        <a href="Corduroy Cap.html">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card8.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Aile</h2>
+                                            <p class="text-[--hitam] font-semibold">Corduroy Cap</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp159.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 9 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                    <img src="img/card09.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                    <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.4/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Slim Fit Jeans</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp255.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="slide hidden" id="slide4">
+                        <div class="wrapper">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-2/3 mx-auto">
+                                    <!-- Card 1 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card01.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Blouson Jacket Short Utility</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp999.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                                    
+                                    <!-- Card 2 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card02.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.5/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Pijakbumi</h2>
+                                            <p class="text-[--hitam] font-semibold">Bumisocks Signature Mid-Quarter Socks</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp169.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                                    
+                                    <!-- Card 3 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card03.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.1/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Flannel Shirt Long-Sleeve</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp255.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 4 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card04.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.5/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">H&M</h2>
+                                            <p class="text-[--hitam] font-semibold">Draped lyocell-blend skirt</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp380.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 5 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card05.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Packable Bag</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp299.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 6 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card06.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.1/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Sukkha Citta</h2>
+                                            <p class="text-[--hitam] font-semibold">HARA - Accent Scarf</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp790.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 7 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card07.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Sukkha Citta</h2>
+                                            <p class="text-[--hitam] font-semibold">ANGKASA Jacquard</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp2.890.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 8 -->
+                                    <div class="relative">
+                                        <a href="Corduroy Cap.html">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card8.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Aile</h2>
+                                            <p class="text-[--hitam] font-semibold">Corduroy Cap</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp159.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 9 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                    <img src="img/card09.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                    <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.4/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Slim Fit Jeans</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp255.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="slide hidden" id="slide5">
+                        <div class="wrapper">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-2/3 mx-auto">
+                                    <!-- Card 1 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card01.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Blouson Jacket Short Utility</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp999.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                                    
+                                    <!-- Card 2 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card02.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.5/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Pijakbumi</h2>
+                                            <p class="text-[--hitam] font-semibold">Bumisocks Signature Mid-Quarter Socks</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp169.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                                    
+                                    <!-- Card 3 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card03.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.1/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Flannel Shirt Long-Sleeve</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp255.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 4 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card04.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.5/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">H&M</h2>
+                                            <p class="text-[--hitam] font-semibold">Draped lyocell-blend skirt</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp380.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 5 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card05.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Packable Bag</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp299.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 6 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card06.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.1/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Sukkha Citta</h2>
+                                            <p class="text-[--hitam] font-semibold">HARA - Accent Scarf</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp790.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 7 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card07.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Sukkha Citta</h2>
+                                            <p class="text-[--hitam] font-semibold">ANGKASA Jacquard</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp2.890.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 8 -->
+                                    <div class="relative">
+                                        <a href="Corduroy Cap.html">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                <img src="img/card8.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.3/5</span>
+                                            </div>
+                                            <div class="absolute top-2 left-20 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-regular fa-pen-to-square text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">Customise</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">Aile</h2>
+                                            <p class="text-[--hitam] font-semibold">Corduroy Cap</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp159.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            
+                                    <!-- Card 9 -->
+                                    <div class="relative">
+                                        <a href="#">
+                                        <div class="bg-[--putih] rounded-lg shadow-lg overflow-hidden border-2 border-[--hitam]">
+                                            <div class="relative group">
+                                                    <img src="img/card09.png" alt="Product 9" class="w-full h-96 object-cover shadow-lg transition-shadow duration-300 hover:shadow-none"> <!-- Menghilangkan bayangan saat di-hover -->
+                                                    <div class="absolute inset-0 bg-[--hitam] opacity-30 transition-opacity duration-300 group-hover:opacity-0"></div>
+                                            </div>
+                                            <div class="absolute top-2 left-2 flex items-center bg-[--putih] border border-[--hitam] rounded-2xl px-2 py-1">
+                                                <i class="fa-regular fa-star text-[--hitam]"></i>
+                                                <span class="ml-1 text-xs font-bold text-[--hitam]">4.4/5</span>
+                                            </div>
+                                        </div>
+                                        <div class="flex flex-col p-4">
+                                            <h2 class="text-lg font-bold">UNIQLO</h2>
+                                            <p class="text-[--hitam] font-semibold">Slim Fit Jeans</p>
+                                            <div class="flex justify-between items-center w-full mt-2">
+                                                <span class="text-xl font-bold">Rp255.000</span>
+                                            </div>
+                                        </a>
+                                            <div class="relative">
+                                                <i id="heart-icon" class="fa-regular fa-heart fa-xl absolute bottom-17 right-0" style="color: #0a090b; cursor: pointer;" onclick="toggleHeart(this)"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <script>
+                                        function toggleHeart(element) {
+                                            if (element.classList.contains('fa-regular')) {
+                                                element.classList.remove('fa-regular');
+                                                element.classList.add('fa-solid');
+                                                element.style.color = '#e81756';
+                                            } else {
+                                                element.classList.remove('fa-solid');
+                                                element.classList.add('fa-regular');
+                                                element.style.color = 'var(--hitam)'; 
+                                            }
+                                        }
+                                    </script>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        
+                <div class="flex justify-center items-center mt-4 space-x-card my-10">
+                    <div class="slider-dots flex space-x-2">
+                        <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" onclick="currentSlide(1)"></div>
+                        <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" onclick="currentSlide(2)"></div>
+                        <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" onclick="currentSlide(3)"></div>
+                        <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" onclick="currentSlide(4)"></div>
+                        <div class="dot w-3 h-3 bg-gray-400 rounded-full cursor-pointer" onclick="currentSlide(5)"></div>
+                    </div>
+                    <div class="slider-buttons flex space-x-4">
+                        <div class="buttonpag cursor-pointer flex items-center justify-center w-10 h-10 border-2 border-black rounded-full hover:bg-gray-200 transition duration-300" onclick="plusSlides(-1)">
+                            <i class="icon fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="buttonpag cursor-pointer flex items-center justify-center w-10 h-10 border-2 border-black rounded-full hover:bg-gray-200 transition duration-300" onclick="plusSlides(1)">
+                            <i class="icon fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                const slides = document.querySelectorAll('.slide');
+                const dots = document.querySelectorAll('.dot');
+
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+
+                slides.forEach((slide, index) => {
+                    slide.classList.add('hidden');
+                    if (index + 1 === slideIndex) {
+                        slide.classList.remove('hidden');
+                    }
+                });
+
+                dots.forEach((dot, index) => {
+                    dot.classList.remove('bg-gray-700');
+                    if (index + 1 === slideIndex) {
+                        dot.classList.add('bg-gray-700');
+                    } else {
+                        dot.classList.add('bg-gray-400');
+                    }
+                });
+            }
+        </script>
+
+<div class="relative flex flex-col md:flex-row">
+    <div class="flex flex-col justify-center max-w-full ml-5 mb-10 h-full w-full md:w-2/3 lg:w-3/4 xl:w-2/3">
+        <div class="w-auto h-auto ml-10 mt-24">
+            <div class="max-w-xl ml-2 mt-5 mb-10">
+                <span class="text-5xl font-bold">Pilihan Hijau Hari Ini, Masa Depan Cerah nanti</span>
+            </div>
+            <div class="max-w-xl ml-2">
+                <span class="text-lg">Dengan memilih produk ramah lingkungan, Anda turut menjaga bumi sekaligus menyiapkan masa depan yang lebih cerah. Setiap langkah kecil hari ini adalah investasi besar untuk generasi mendatang.</span>
+            </div>
+            <div class="max-w-xl ml-2 mt-5">
+                <ul class="flex flex-col md:flex-row md:space-x-8">
+                    <li class="flex flex-col items-center mb-5 md:mb-0">
+                        <div class="flex items-center space-x-40">
+                            <span class="text-[--hitam] py-2 font-semibold text-4xl">50%</span>
+                            <i class="fa-solid fa-recycle fa-2xl text-4xl"></i>
+                        </div>
+                        <span class="text-[--hitam] py-2 text-left">Produk ramah lingkungan, terutama yang terbuat dari bahan daur ulang atau berkelanjutan, dapat mengurangi emisi karbon hingga 50% dibandingkan produk konvensional dalam siklus produksinya. (Environmental Protection Agency)</span>
+                    </li>
+                    <li class="flex flex-col items-center">
+                        <div class="flex items-center space-x-24">
+                            <span class="text-[--hitam] py-2 font-semibold text-4xl">20%-25%</span>
+                            <i class="fa-solid fa-store fa-2xl text-4xl"></i>
+                        </div>
+                        <span class="text-[--hitam] py-2 text-left">Produk lokal berbasis lingkungan sering kali melibatkan produsen lokal dan dapat meningkatkan pendapatan masyarakat hingga 20-25% dibandingkan rantai pasokan global berbasis bahan mentah. (International Trade Centre)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="flex-shrink-0 my-10 mr-24 w-full md:w-1/3 lg:w-1/4 xl:w-1/3">
+        <img src="img/gambarbwh.png" alt="Deskripsi Gambar" class="h-full object-cover" />
+    </div>
+</div>
+
+<footer class="bg-[--hitam] text-[--putih] py-8">
+    <div class="mx-auto px-4">
+               <div class="relative">
+                   <div class="logo mb-4 md:mb-0 absolute left-0">
+                       <img class="company-logo-icon h-10" alt="Logo" src="img/logo bentala putih.png">
+                   </div>
+               </div>
+               <div class="flex md:flex-row justify-center items-center">
+                   <div class="flex flex-row space-x-14 mb-4 md:mb-0">
+                       <a href="#" class="hover:underline">Koleksi</a>
+                       <a href="#" class="hover:underline">FAQ</a>
+                       <a href="#" class="hover:underline">Customer Service</a>
+                       <a href="#" class="hover:underline">Pengembalian</a>
+                       <a href="#" class="hover:underline">Shipping Policy</a>
+                   </div>
+               </div>
+               <div class="relative">
+                   <div class="social-links flex space-x-4 absolute right-0 ">
+                       <i class="fa-brands fa-facebook fa-lg cursor-pointer" onclick="openVideo()"></i>
+                       <i class="fa-brands fa-instagram fa-lg cursor-pointer" onclick="openInstagram()"></i>
+                       <i class="fa-brands fa-twitter fa-lg cursor-pointer" onclick="openX()"></i>
+                       <i class="fa-brands fa-linkedin fa-lg cursor-pointer" onclick="openlinkedin()"></i>
+                       <i class="fa-brands fa-youtube fa-lg cursor-pointer" onclick="openyt()"></i>
+                   </div>
+                   <script>
+                       const logo = document.getElementById('logo');
+                       logo.addEventListener('click', function() {
+                           window.location.href = 'index.html'; 
+                       });
+               
+                       function openInstagram() {
+                           window.open('https://www.instagram.com/raffi1__/', '_blank');
+                       }
+               
+                       function openX() {
+                           window.open('https://x.com/Raffi1__', '_blank');
+                       }
+               
+                       function openlinkedin() {
+                           window.open('https://www.linkedin.com/in/muhamadraffi/', '_blank');
+                       }
+               
+                       function openyt() {
+                           window.open('admin produk.html', '_blank');
+                       }
+               
+                       function openVideo() {
+                           const videoPopup = document.getElementById('videoPopup');
+                           const myVideo = document.getElementById('myVideo');
+                           videoPopup.style.display = 'flex'; 
+                           myVideo.play(); 
+                       }
+               
+                       function answer(response) {
+                           const videoPopup = document.getElementById('videoPopup');
+                           videoPopup.style.display = 'none'; 
+                           const myVideo = document.getElementById('myVideo');
+                           myVideo.pause(); 
+                           myVideo.currentTime = 0; 
+                       }
+                   </script>
+               </div>
+               <div class="credits mt-8">
+                   <div class="divider border-t border-gray-600 mb-4"></div>
+                   <div class="flex flex-col md:flex-row justify-center items-center">
+                       <div class="flex space-x-4 text-sm mt-2 md:mt-0">
+                           <div class="text-sm">© 2024 Relume. All rights reserved.</div>
+                           <a href="#" class="hover:underline">Privacy Policy</a>
+                           <a href="#" class="hover:underline">Terms of Service</a>
+                           <a href="#" class="hover:underline">Cookies Settings</a>
+                       </div>
+                   </div>
+               </div>
+               </footer>
+               
+               <div id="videoPopup" class="fixed inset-0 bg-black bg-opacity-75 items-center justify-center hidden">
+                   <div id="videoContent" class="relative w-screen h-screen flex items-center justify-center">
+                       <video id="myVideo" class="w-full h-full object-cover" loop>
+                           <source src="img/You are an idiot!! - Zuhuk (480p, h264, youtube).mp4" type="video/mp4">
+                       </video>
+                       <div id="question" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white rounded-lg transition-all duration-300 inline-flex flex-col items-center">
+                           <p class="text-lg font-semibold text-center">Raffi ganteng? Yes or No</p>
+                           <div class="flex justify-center mt-4 space-x-4">
+                               <button id="yesButton" class="bg-[--hitam] text-white px-4 py-2 rounded transition duration-200">Yes</button>
+                               <button id="noButton" class="bg-[--hitam] text-white px-4 py-2 rounded transition duration-200">No</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               
+               <script>
+                   function moveQuestion() {
+                       const question = document.getElementById('question');
+                       const videoContent = document.getElementById('videoContent');
+                       
+                       if (!question || !videoContent) return;
+                   
+                       const containerWidth = videoContent.clientWidth;
+                       const containerHeight = videoContent.clientHeight;
+                   
+                       const questionWidth = question.offsetWidth;
+                       const questionHeight = question.offsetHeight;
+                   
+                       const randomX = Math.max(0, Math.min(containerWidth - questionWidth, Math.random() * containerWidth));
+                       const randomY = Math.max(0, Math.min(containerHeight - questionHeight, Math.random() * containerHeight));
+                   
+                       question.style.left = `${randomX}px`;
+                       question.style.top = `${randomY}px`;
+                       question.style.transform = 'translate(0, 0)'; 
+                   }
+               
+                   const yesButton = document.getElementById('yesButton');
+                   const noButton = document.getElementById('noButton');
+               
+                   noButton.addEventListener('mouseenter', () => {
+                       moveQuestion(); 
+                   });
+               
+                   yesButton.addEventListener('click', () => {
+                       window.location.href = 'index.html';
+                   });
+               </script>
+
+
+    <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js'></script>
+    <script src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js'></script>
+    <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'></script>
+    <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      </body>
+    </html>

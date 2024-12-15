@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="Width=device-width initial-sccale=1.0">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+  <link rel="stylesheet" href="css/styleguide.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'>
+  <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+  <link rel="icon" type="png" href="img/logo bentala putih.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  
+  <title>BENTALA</title>
+  
+</head>
+<body class="bg-white text-gray-900">
+  <nav class="fixed top-0 w-full h-14 z-10 bg-[--putih]">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-1">
+            <div class="absolute left-10 top-4 h-16 w-16 space-x-10">
+                <ul class="sm:flex space-x-10">
+                    <li><a href="koleksi.html" class="text-[--hitam]  hover:bg-[--hitam] hover:text-[--putih] px-3 py-2 rounded no-underline">Koleksi</a></li>
+                    <li><a class="text-[--hitam]  hover:bg-[--hitam] hover:text-[--putih] px-3 py-2 rounded no-underline" onclick="openKomunitas()">Komunitas</a></li>
+                    <li><a class="text-[--hitam]  hover:bg-[--hitam] hover:text-[--putih] px-3 py-2 rounded no-underline">Tentang</a></li>
+                </ul>
+                <script>
+                    function openKomunitas() {
+                        window.open('Komunitas.html');
+                    }
+                </script>
+            </div>
+            <div class="absolute top-2.5 left-1/2 transform -translate-x-1/2">
+                <a href="#" id="logo">
+                    <img src="img/Logo BENTALA.png" alt="BENTALA" class="w-15 h-9">
+                </a>
+            </div>
+            <div class="absolute top-2.5 right-5">
+                <form class="space-x-10 flex items-center">
+                    <div class="relative">
+                        <input type="text" placeholder="Search" class="bg-transparent text-[--item] border-2 border-[--hitam] rounded-lg py-1 pl-10 pr-3">
+                        <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <button class="btn" type="button">
+                        <div onclick="openCart()">
+                            <i class="fa-solid fa-bag-shopping fa-lg" style="color: var(--hitam);"></i>
+                        </div>
+                    </button>
+
+                    <script>
+                        function openCart() {
+                            window.open('Cart.html');
+                        }
+                    </script>
+
+                    <button class="btn" type="button">
+                        <i class="fa-regular fa-user fa-lg"onclick="openProfile()" style="color: var(--hitam);"></i>
+                    </button>
+                </form>
+            </div>
+
+            <script>
+                function openProfile() {
+                    window.open('Profile.html', '_blank');
+                }
+            </script>
+
+        </div>
+    </div>
+</nav>
+  <main class="container mx-auto py-20 px-10">
+    <div class="">
+      <ul class="flex flex-nowrap space-x-3">
+          <li>
+              <a href="#" class="text-[--hitam] py-2 rounded no-underline text-lg">Home</a>
+          </li>
+          <li>
+              <i class="fa-solid fa-angle-right fa-xs relative top-0.5"></i>
+          </li>
+          <li>
+              <a href="koleksi.html" class="text-[--hitam] py-2 rounded no-underline text-lg">Koleksi</a>
+          </li>
+      </ul>    
+    </div>
+    <h1 class="text-4xl font-bold mt-4">KOLEKSI</h1>
+    <div class="flex mt-8">
+      <aside class="w-1/4 pr-6">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-xl font-bold">FILTER</h2>
+          <button class="text-gray-600 hover:underline">Clear all</button>
+        </div>
+        <div class="mb-6">
+          <h3 class="font-bold mb-2">Showing 18 of 18</h3>
+          <ul>
+            <li><div class="text-gray-700 hover:underline cursor-pointer" onclick="openSemua()">Semua</div></li>
+            <li><div class="text-gray-700 hover:underline cursor-pointer" onclick="openWanita()">Wanita</div></li>
+            <li><div class="text-gray-700 hover:underline cursor-pointer" onclick="openPria()">Pria</div></li>
+          </ul>
+
+          <script>
+            function openSemua(){
+              window.open('https://www.instagram.com/radhwa___/','_blank')
+            }
+            function openWanita(){
+              window.open('https://www.instagram.com/radhwa___/','_blank')
+            }
+            function openPria(){
+              window.open('https://www.instagram.com/radhwa___/','_blank')
+            }
+          </script>
+
+        </div>
+        <hr class="border-gray-300 mb-6"/>
+        <div class="mb-6">
+          <h3 class="font-bold mb-2">Brand</h3>
+          <div class="relative">
+            <input type="text" placeholder="Search" class="bg-transparent text-[--item] border-2 border-[--hitam] rounded-2xl py-2 pl-10 pr-3">
+            <svg class="absolute left-3 top-3 transform  text-[--hitam] h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+            </svg>
+          </div>
+        </div>
+        <hr class="border-gray-100 mb-6"/>
+        <div class="mb-6">
+          <head>
+            <script src="https://cdn.tailwindcss.com"></script>
+            <style>
+                .bg-light-brown {
+                    background-color: #D2B48C; /* Light brown color */
+                }
+            </style>
+        </head>
+        <h3 class="font-bold mb-2">Warna</h3>
+        <head>
+          <script src="https://cdn.tailwindcss.com"></script>
+          <style>
+              .bg-light-brown {
+                  background-color: #D2B48C; /* Light brown color */
+              }
+              .pulse {
+                  animation: pulse 0s infinite;
+              }
+              @keyframes pulse {
+                  0%, 100% {
+                      transform: scale(1);
+                      opacity: 1;
+                  }
+                  50% {
+                      transform: scale(1.2);
+                      opacity: 0.7;
+                  }
+              }
+          </style>
+      </head>
+      <body class="flex items-center justify-center min-h-screen bg-gray-100">
+          <div class="flex flex-wrap gap-4">
+              <!-- Red -->
+              <div class="flex items-center border border-[--hitam] rounded-full px-4 py-2 transition-transform transform hover:scale-105 hover:shadow-lg hover:border-red-500">
+                  <div class="w-4 h-4 bg-red-500 rounded-full mr-2 pulse"></div>
+                  <span class="text-[--hitam] font-semibold">Red</span>
+              </div>
+              <!-- Blue -->
+              <div class="flex items-center border border-[--hitam] rounded-full px-4 py-2 transition-transform transform hover:scale-105 hover:shadow-lg hover:border-blue-700">
+                  <div class="w-4 h-4 bg-blue-700 rounded-full mr-2 pulse"></div>
+                  <span class="text-[--hitam] font-semibold">Blue</span>
+              </div>
+              <!-- Purple -->
+              <div class="flex items-center border border-[--hitam] rounded-full px-4 py-2 transition-transform transform hover:scale-105 hover:shadow-lg hover:border-purple-500">
+                  <div class="w-4 h-4 bg-purple-500 rounded-full mr-2 pulse"></div>
+                  <span class="text-[--hitam] font-semibold">Purple</span>
+              </div>
+              <!-- Yellow -->
+              <div class="flex items-center border border-[--hitam] rounded-full px-4 py-2 transition-transform transform hover:scale-105 hover:shadow-lg hover:border-yellow-500">
+                  <div class="w-4 h-4 bg-yellow-500 rounded-full mr-2 pulse"></div>
+                  <span class="text-[--hitam] font-semibold">Yellow</span>
+              </div>
+              <!-- Green -->
+              <div class="flex items-center border border-[--hitam] rounded-full px-4 py-2 transition-transform transform hover:scale-105 hover:shadow-lg hover:border-green-500">
+                  <div class="w-4 h-4 bg-green-500 rounded-full mr-2 pulse"></div>
+                  <span class="text-[--hitam] font-semibold">Green</span>
+              </div>
+              <!-- Brown -->
+              <div class="flex items-center border border-[--hitam] rounded-full px-4 py-2 transition-transform transform hover:scale-105 hover:shadow-lg hover:border-[--coklat]">
+                  <div class="w-4 h-4 bg-[--coklat] rounded-full mr-2 pulse"></div>
+                  <span class="text-[--hitam] font-semibold">Brown</span>
+              </div>
+          </div>
+      </body>
+      
+        <div class="mb-6">
+          <h3 class="font-bold mb-2">Harga</h3>
+          <ul>
+            <li>
+              <div class="flex items-center flex-nowrap">
+                <input type="radio" id="price1" name="price" class="hidden peer" /> 
+                <label for="price1" class="flex cursor-pointer w-3 h-3 border-2 border-[--hitam] rounded-full block mr-2 peer-checked:bg-[--hitam] peer-checked:border-[--hitam] relative"></label>
+                <span class="text-sm">Rp 0 - Rp 100.000</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center flex-nowrap">
+                <input type="radio" id="price2" name="price" class="hidden peer" /> 
+                <label for="price2" class="flex cursor-pointer w-3 h-3 border-2 border-[--hitam] rounded-full block mr-2 peer-checked:bg-[--hitam] peer-checked:border-[--hitam] relative"></label>
+                <span class="text-sm">Rp 100.000 - Rp 250.000</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center flex-nowrap">
+                <input type="radio" id="price3" name="price" class="hidden peer" /> 
+                <label for="price3" class="flex cursor-pointer w-3 h-3 border-2 border-[--hitam] rounded-full block mr-2 peer-checked:bg-[--hitam] peer-checked:border-[--hitam] relative"></label>
+                <span class="text-sm">Rp 250.000 - Rp 500.000</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center flex-nowrap">
+                <input type="radio" id="price4" name="price" class="hidden peer" /> 
+                <label for="price4" class="flex cursor-pointer w-3 h-3 border-2 border-[--hitam] rounded-full block mr-2 peer-checked:bg-[--hitam] peer-checked:border-[--hitam] relative"></label>
+                <span class="text-sm">Rp &gt; 500.000</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="mb-6">
+          <h3 class="font-bold mb-2">Ukuran</h3>
+<div class="flex space-x-2">
+  <!-- Efek hover dengan transisi -->
+  <button class="w-8 h-8 rounded-full border border-gray-300 hover:border-black hover:bg-gray-200 transition duration-300">S</button>
+  <button class="w-8 h-8 rounded-full border border-gray-300 hover:border-black hover:bg-gray-200 transition duration-300">M</button>
+  <button class="w-8 h-8 rounded-full border border-gray-300 hover:border-black hover:bg-gray-200 transition duration-300">L</button>
+  <button class="w-8 h-8 rounded-full border border-gray-300 hover:border-black hover:bg-gray-200 transition duration-300">XL</button>
+</div>
+</div>
+</aside>
+<section class="w-3/4">
+  <div class="flex justify-between items-center mb-6">
+    <div class="flex items-center space-x-2">
+      <!-- Tambahkan shadow dan efek hover -->
+      <button class="bg-gray-200 rounded-full py-1 px-3 hover:bg-gray-300 hover:shadow-md transition duration-300"> 
+        Tag 
+        <i class="fas fa-times ml-2"> </i>
+      </button>
+          </div>
+          <div class="relative">
+            <select class="py-2 px-3">
+              <option>Sort by</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-6 w-full">
+          <div class="rounded-lg p-4">
+            <div class="relative">
+              <img alt="Striped Long-Sleeve Shirt" class="w-full h-64 object-cover mb-4" height="900" src="img/card01.png" width="500"/>
+              <div class="absolute top-2 left-2 bg-white bg-opacity-75 rounded-full px-2 py-1 text-xs font-semibold flex items-center">
+                <i class="fas fa-star text-yellow-500 mr-1"></i>
+                <span>4.3/5</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold">UNIQLO</h3>
+              <i class="far fa-heart text-gray-400 ml-2"></i>
+            </div>
+            <p class="text-gray-600"> Blouson Jacket Short Utility</p>
+            <p class="font-bold">Rp999.000</p>
+          </div>
+          <div class="rounded-lg p-4">
+            <div class="relative">
+              <img alt="Jacket Long-Sleeve" class="w-full h-64 object-cover mb-4" height="400" src="kaoskaki.jpg" width="300"/>
+              <div class="absolute top-2 left-2 bg-white bg-opacity-75 rounded-full px-2 py-1 text-xs font-semibold flex items-center">
+                <i class="fas fa-star text-yellow-500 mr-1"></i>
+                <span>4.7/5</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold">Pijakbumi</h3>
+              <i class="far fa-heart text-gray-400 ml-2"></i>
+            </div>
+            <p class="text-gray-600">Bumisocks Signature Mid-Quarter Socks</p>
+            <p class="font-bold">Rp169.900</p>
+          </div>
+          <div class="rounded-lg p-4">
+            <div class="relative">
+              <img alt="Sweater Polo Long-Sleeve" class="w-full h-64 object-cover mb-4" height="400" src="uniqlo2.jpg" width="300"/>
+              <div class="absolute top-2 left-2 bg-white bg-opacity-75 rounded-full px-2 py-1 text-xs font-semibold flex items-center">
+                <i class="fas fa-star text-yellow-500 mr-1"></i>
+                <span>4.1/5</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold">UNIQLO</h3>
+              <i class="far fa-heart text-gray-400 ml-2"></i>
+            </div>
+            <p class="text-gray-600">Sweater Polo Long-Sleeve</p>
+            <p class="font-bold">Rp255.000</p>
+          </div>
+          <div class="rounded-lg p-4">
+            <div class="relative">
+              <img alt="Knit Sweater" class="w-full h-64 object-cover mb-4" height="400" src="hm3-1.jpg" width="300"/>
+              <div class="absolute top-2 left-2 bg-white bg-opacity-75 rounded-full px-2 py-1 text-xs font-semibold flex items-center">
+                <i class="fas fa-star text-yellow-500 mr-1"></i>
+                <span>4.5/5</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold">H&M</h3>
+              <i class="far fa-heart text-gray-400 ml-2"></i>
+            </div>
+            <p class="text-gray-600">Draped lyocell-blend skirt</p>
+            <p class="font-bold">Rp380.000</p>
+          </div>
+          <div class="rounded-lg p-4">
+            <div class="relative">
+              <img alt="Oversize Tees" class="w-full h-64 object-cover mb-4" height="400" src="uniqlo.3.jpg" width="300"/>
+              <div class="absolute top-2 left-2 bg-white bg-opacity-75 rounded-full px-2 py-1 text-xs font-semibold flex items-center">
+                <i class="fas fa-star text-yellow-500 mr-1"></i>
+                <span>4/5</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold">UNIQLO</h3>
+              <i class="far fa-heart text-gray-400 ml-2"></i>
+            </div>
+            <p class="text-gray-600">Packable Bag</p>
+            <p class="font-bold">Rp299.000</p>
+          </div>
+          <div class="rounded-lg p-4">
+            <div class="relative">
+              <img alt="Jersey Polo" class="w-full h-64 object-cover mb-4" height="400" src="sukkhacita3.jpg" width="300"/>
+              <div class="absolute top-2 left-2 bg-white bg-opacity-75 rounded-full px-2 py-1 text-xs font-semibold flex items-center">
+                <i class="fas fa-star text-yellow-500 mr-1"></i>
+                <span>4.1/5</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold">Sukkha Citta</h3>
+              <i class="far fa-heart text-gray-400 ml-2"></i>
+            </div>
+            <p class="text-gray-600">HARA - Accent Scarf</p>
+            <p class="font-bold">Rp790.000</p>
+          </div>
+          <div class="rounded-lg p-4">
+            <div class="relative">
+              <img alt="Short-Sleeve Shirt" class="w-full h-64 object-cover mb-4" height="400" src="sukkhacita1.jpg" width="300"/>
+              <div class="absolute top-2 left-2 bg-white bg-opacity-75 rounded-full px-2 py-1 text-xs font-semibold flex items-center">
+                <i class="fas fa-star text-yellow-500 mr-1"></i>
+                <span>4.3/5</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold">Sukkha Citta</h3>
+              <i class="far fa-heart text-gray-400 ml-2"></i>
+            </div>
+            <p class="text-gray-600">ANGKASA Jacquard</p>
+            <p class="font-bold">Rp2.890.000</p>
+          </div>
+          <div class="rounded-lg p-4">
+            <div class="relative">
+              <img alt="Corduroy Cap" class="w-full h-64 object-cover mb-4" height="400" src="sukkhacita2.jpg" width="50"/>
+              <div class="absolute top-2 left-2 bg-white bg-opacity-75 rounded-full px-2 py-1 text-xs font-semibold flex items-center">
+                <i class="fas fa-star text-yellow-500 mr-1"></i>
+                <span>4.7/5</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold">Sukkha Citta</h3>
+              <i class="far fa-heart text-gray-400 ml-2"></i>
+            </div>
+            <p class="text-gray-600">PAGISENJA - Weekend Shirt</p>
+            <p class="font-bold">Rp2.690.000</p>
+          </div>
+          <div class="rounded-lg p-4">
+            <div class="relative">
+              <img alt="Flannel Scarf" class="w-full h-64 object-cover mb-4" height="400" src="hm2.jpg" width="300"/>
+              <div class="absolute top-2 left-2 bg-white bg-opacity-75 rounded-full px-2 py-1 text-xs font-semibold flex items-center">
+                <i class="fas fa-star text-yellow-500 mr-1"></i>
+                <span>4.4/5</span>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <h3 class="font-bold">UNIQLO</h3>
+              <i class="far fa-heart text-gray-400 ml-2"></i>
+            </div>
+            <p class="text-gray-600">Slim Fit Jeans</p>
+            <p class="font-bold">Rp255.000</p>
+          </div>
+        </div>
+        <div class="flex justify-end mt-8 space-x-4">
+  <!-- Tombol Kiri -->
+  <button class="border border-gray-300 rounded-full py-2 px-4 transition-all duration-300 transform hover:scale-110 hover:shadow-md hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <!-- Tombol Kanan -->
+  <button class="border border-gray-300 rounded-full py-2 px-4 transition-all duration-300 transform hover:scale-110 hover:shadow-md hover:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-300">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+</div>
+
+      </section>
+    </div>
+</main>
+    <footer class="bg-[--hitam] text-[--putih] py-20">
+      <div class="mx-auto px-4">
+                 <div class="relative">
+                     <div class="logo mb-4 md:mb-0 absolute left-0">
+                         <img class="company-logo-icon h-10" alt="Logo" src="logo bentala putih.png">
+                     </div>
+                 </div>
+                 <div class="flex md:flex-row justify-center items-center">
+                     <div class="flex flex-row space-x-14 mb-4 md:mb-0">
+                         <a href="#" class="hover:underline">Koleksi</a>
+                         <a href="#" class="hover:underline">FAQ</a>
+                         <a href="#" class="hover:underline">Customer Service</a>
+                         <a href="#" class="hover:underline">Pengembalian</a>
+                         <a href="#" class="hover:underline">Shipping Policy</a>
+                     </div>
+                 </div>
+                 <div class="relative">
+                     <div class="social-links flex space-x-4 absolute right-0">
+                         <i class="fa-brands fa-facebook fa-lg cursor-pointer" onclick="openVideo()"></i>
+                         <i class="fa-brands fa-instagram fa-lg cursor-pointer" onclick="openInstagram()"></i>
+                         <i class="fa-brands fa-twitter fa-lg cursor-pointer" onclick="openX()"></i>
+                         <i class="fa-brands fa-linkedin fa-lg cursor-pointer" onclick="openlinkedin()"></i>
+                         <i class="fa-brands fa-youtube fa-lg cursor-pointer" onclick="openyt()"></i>
+                     </div>
+                     <script>
+                         const logo = document.getElementById('logo');
+                         logo.addEventListener('click', function() {
+                             window.location.href = 'index.html'; 
+                         });
+                 
+                         function openInstagram() {
+                             window.open('https://www.instagram.com/raffi1__/', '_blank');
+                         }
+                 
+                         function openX() {
+                             window.open('https://x.com/Raffi1__', '_blank');
+                         }
+                 
+                         function openlinkedin() {
+                             window.open('https://www.linkedin.com/in/muhamadraffi/', '_blank');
+                         }
+                 
+                         function openyt() {
+                             window.open('https://www.instagram.com/raffi1__/', '_blank');
+                         }
+                 
+                         function openVideo() {
+                             const videoPopup = document.getElementById('videoPopup');
+                             const myVideo = document.getElementById('myVideo');
+                             videoPopup.style.display = 'flex'; 
+                             myVideo.play(); 
+                         }
+                 
+                         function answer(response) {
+                             const videoPopup = document.getElementById('videoPopup');
+                             videoPopup.style.display = 'none'; 
+                             const myVideo = document.getElementById('myVideo');
+                             myVideo.pause(); 
+                             myVideo.currentTime = 0; 
+                         }
+                     </script>
+                 </div>
+                 <div class="credits mt-8">
+                     <div class="divider border-t border-gray-600 mb-4"></div>
+                     <div class="flex flex-col md:flex-row justify-center items-center">
+                         <div class="flex space-x-10 text-sm mt-2 md:mt-0">
+                             <div class="text-sm">© 2024 Relume. All rights reserved.</div>
+                             <a href="#" class="hover:underline">Privacy Policy</a>
+                             <a href="#" class="hover:underline">Terms of Service</a>
+                             <a href="#" class="hover:underline">Cookies Settings</a>
+                         </div>
+                     </div>
+                 </div>
+                 </footer>
+  </body>
+</body>
+</html>
